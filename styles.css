@@ -380,7 +380,6 @@ template {
 
 a {
   all: unset;
-  /* Все стили элемента сбрасываются в ноль. */
 }
 
 ul {
@@ -391,7 +390,6 @@ ul,
 ol {
   margin-top: 0;
   padding-top: 0;
-  /* на случай, если в вашем проекте настроен внутренний отступ */
 }
 
 ::selection {
@@ -401,19 +399,12 @@ ol {
 
 .container {
   max-width: 1140px;
-  /* Точная ширина контента из вашей Figma */
   width: 100%;
-  /* Позволяет блоку сжиматься на смартфонах */
   margin-left: auto;
-  /* Эти две строчки автоматически */
   margin-right: auto;
-  /* ...выравнивают контейнер строго по центру экрана */
   padding-left: 20px;
-  /* Безопасные отступы по бокам, чтобы на телефонах */
   padding-right: 20px;
-  /* ...текст не прилипал к краям экрана */
   box-sizing: border-box;
-  /* Чтобы отступы padding не увеличивали общую ширину */
 }
 
 header {
@@ -425,44 +416,27 @@ header {
 .header .container {
   display: flex;
   justify-content: space-between;
-  /* Изменили на space-between, чтобы прижать логотип и кнопку строго к краям сетки в 1140px */
   align-items: center;
 }
 
 .header_menu {
   display: flex;
-  /* Выстраивает li горизонтально в ряд */
   list-style: none;
-  /* Убирает стандартные точки у списка li */
   padding: 0;
-  /* Сбрасывает стандартные внутренние отступы браузера */
   margin: 0;
-  /* Сбрасывает стандартные внешние отступы браузера */
   column-gap: 50px;
 }
 
 .header_button {
   display: inline-flex;
-  /* Позволяет задавать размеры и центровать текст внутри */
   width: 211px;
-  /* Ваша ширина из Figma */
   height: 60px;
-  /* Ваша высота из Figma */
   color: #FFFFFF;
-
-  /* Стилизация внешнего вида */
   background: #FF7143;
-  /* Ваш оранжевый цвет */
   border-radius: 10px;
-  /* Ваше скругление углов */
   text-decoration: none;
-  /* Убираем стандартное подчеркивание ссылки */
-
-  /* Выравнивание текста строго по центру кнопки */
   justify-content: center;
-  /* Центруем текст по горизонтали */
   align-items: center;
-  /* Центруем текст по вертикали */
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
@@ -549,26 +523,14 @@ a {
 
 .hero_button {
   display: inline-flex;
-  /* Позволяет задавать размеры и центровать текст внутри */
   width: 211px;
-  /* Ваша ширина из Figma */
   height: 60px;
-  /* Ваша высота из Figma */
   color: #FFFFFF;
-
-  /* Стилизация внешнего вида */
   background: #5454D4;
-  /* Ваш оранжевый цвет */
   border-radius: 10px;
-  /* Ваше скругление углов */
   text-decoration: none;
-  /* Убираем стандартное подчеркивание ссылки */
-
-  /* Выравнивание текста строго по центру кнопки */
   justify-content: center;
-  /* Центруем текст по горизонтали */
   align-items: center;
-  /* Центруем текст по вертикали */
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
@@ -748,22 +710,16 @@ a {
 
 .list_img {
   height: 75px;
-  /* Задайте высоту, которая вам подходит (например, от 60px до 100px) */
   display: flex;
   align-items: flex-end;
-  /* Прижимает все картинки к нижнему краю этой области (к заголовкам) */
   justify-content: center;
   margin-bottom: 30px;
-  /* Делает одинаковый фиксированный отступ от картинки до заголовка */
 }
 
 .list_img img {
   height: 100%;
-  /* Картинка займет всю высоту контейнера (80px) */
   width: auto;
-  /* Ширина подстроится автоматически, чтобы не ломать пропорции */
   object-fit: contain;
-  /* Картинка аккуратно впишется в размеры, не искажаясь */
 }
 
 .price {
@@ -798,7 +754,6 @@ a {
   border-radius: 10px;
 }
 
-/* Базовые общие стили для кнопок в НЕАКТИВНОМ состоянии (серый фон, темный текст) */
 .button_left,
 .button_right {
   margin: 0px;
@@ -827,11 +782,9 @@ a {
 
 .price_buttons .extra {
   color: #FFFFFF;
-  background-color: #5454D4; /* Фиолетовый цвет активной кнопки */
+  background-color: #5454D4;
 
 }
-
-/* --- Сетка и стилизация карточек --- */
 
 .price_cards {
   display: flex;
@@ -939,23 +892,18 @@ a {
   margin-bottom: 42px;
 }
 
-/* --- Логика переключения тарифов Месяц / Год --- */
-
-/* Изначально (выбран Monthly) скрываем годовые цены */
 .text_yearly {
   display: none !important;
 }
 
-/* Изначально показываем месячные цены */
 .text_monthly {
   display: flex !important;
 }
 
-/* Когда активен Yearly (исправлена опечатка в селекторе .price.view_yearly) */
 .price.view_yearly .text_monthly {
-  display: none !important; /* Прячем месяц */
+  display: none !important;
 }
 
 .price.view_yearly .text_yearly {
-  display: flex !important;  /* Показываем год */
+  display: flex !important; 
 }
