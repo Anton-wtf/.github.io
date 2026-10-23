@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>My Playground</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,11 +34,11 @@
                             </li>
 
                             <li>
-                                <a class="header_link" href="#">Featers</a>
+                                <a class="header_link" href="#features">Features</a>
                             </li>
 
                             <li>
-                                <a class="header_link" href="#">Pricing</a>
+                                <a class="header_link" href="#price">Pricing</a>
                             </li>
 
                             <li>
@@ -47,7 +48,7 @@
                         </ul>
                     </nav>
 
-                    <a class="header_button" href="#">Get Started</a>
+                    <a class="header_button" href="#price">Get Started</a>
             </div>
         </header>
 
@@ -61,8 +62,8 @@
                         end-to-end.</p>
 
                     <div class="hero_actions">
-                        <a class="hero_button" href="#">Get Started</a>
-                        <a class="button_arrow" href="#">
+                        <a class="hero_button" href="#price">Get Started</a>
+                        <a class="button_arrow" href="#price">
                             <img src="img/Down Arrow.jpg" alt="Стрелка вниз">
                         </a>
                     </div>
@@ -115,7 +116,7 @@
                     <h1>Subscription index</h1>
                     <p>A daily dataset to keep you up to date on subscription market trends and what's happening in your
                         vertical.</p>
-                    <a href="#">Learn more</a>
+                    <a href="#price">Learn more</a>
                 </div>
 
             </div>
@@ -127,7 +128,7 @@
                 <div class="metrics_content">
                     <h1>In-depth metrics</h1>
                     <p>Accurate, real-time reporting at your fingertips. Getting data has never been easier.</p>
-                    <a href="#">Learn more</a>
+                    <a href="#price">Learn more</a>
                 </div>
 
                 <div class="metrics_img">
@@ -137,7 +138,7 @@
             </div>
         </section>
 
-        <section class="list">
+        <section class="list" id="features">
             <div class="container">
 
                 <ul class="list_ul">
@@ -147,18 +148,18 @@
                         <div class="list_img">
                             <img src="img/Card.jpg" alt="Банковская карта">
                         </div>
-                        
+
                         <h3>Benchmarks</h3>
                         <p>See how you stack up against comparable companies in similar stages.</p>
 
                     </li>
-                    
+
                     <li>
 
                         <div class="list_img">
                             <img src="img/Calculator.jpg" alt="КАльякулятор">
                         </div>
-                        
+
                         <h3>Pricing Audit</h3>
                         <p>Benchmark the health of your monetization and pricing strategy.</p>
 
@@ -169,14 +170,79 @@
                         <div class="list_img">
                             <img src="img/Camera.jpg" alt="">
                         </div>
-                        
+
                         <h3>Retention Audit</h3>
                         <p>Audit where revenue leakage exists and where you can increase retention.</p>
 
                     </li>
 
-                
+
                 </ul>
+
+            </div>
+        </section>
+
+        <section class="price" id="price">
+            <div class="container">
+
+                <div class="price_header">
+
+                    <h1>Get the right plan for future product.</h1>
+                    <div class="price_buttons">
+                        <button class="button_left">Yearly</button>
+                        <button class="button_right extra">Monthly</button>
+                    </div>
+                </div>
+
+                <div class="price_cards">
+                    <div class="card card_1">
+                        <p class="card_p_up">Starter</p>
+                        <h1 class="price_number">Free</h1>
+                        <p class="card_p_down">1 Website</p>
+                        <p class="card_p_down">5 GB Hosting</p>
+                        <p class="card_p_down">Limited Support</p>
+                        <button class="price_card_button">Get Started</button>
+                    </div>
+
+                    <div class="card card_2">
+                        <p class="card_p_up">Premium</p>
+
+                        <div class="card_2_price dollars text_monthly">
+                            <h1 class="price_number">$29</h1>
+                            <h2>/month</h2>
+                        </div>
+
+                        <div class="card_2_price dollars text_yearly">
+                            <h1 class="price_number">$299</h1>
+                            <h2>/yearly</h2>
+                        </div>
+
+                        <p class="card_p_down">10 Website</p>
+                        <p class="card_p_down">15 GB Hosting</p>
+                        <p class="card_p_down">Premium Support</p>
+                        <button class="price_card_button">Get Started</button>
+                    </div>
+
+                    <div class="card card_3">
+                        <p class="card_p_up">Enterprise</p>
+
+                        <div class="card_3_price dollars text_monthly">
+                            <h1 class="price_number">$49</h1>
+                            <h2>/month</h2>
+                        </div>
+
+
+                        <div class="card_3_price dollars text_yearly">
+                            <h1 class="price_number">$499</h1>
+                            <h2>/yearly</h2>
+                        </div>
+
+                        <p class="card_p_down">Unlimited Website</p>
+                        <p class="card_p_down">50 GB Hosting</p>
+                        <p class="card_p_down">Premium Support</p>
+                        <button class="price_card_button">Get Started</button>
+                    </div>
+                </div>
 
             </div>
         </section>
